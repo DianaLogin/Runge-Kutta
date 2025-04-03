@@ -5,10 +5,12 @@
 #include <algorithm>
 
 // Дифференциальное уравнение dy/dx = f(x, y)
-double f(double x, double y) {
+double f(double x, double y) 
+{
     return y; // Пример: dy/dx = y
 }
 
+// Метод Рунге-Кутты 4-го порядка 
 void Runge_Kutta(const double& a, const double& b, const int& n, std::vector<double>& y)
 {
     double h = (b - a) / n; // шаг по иксам
