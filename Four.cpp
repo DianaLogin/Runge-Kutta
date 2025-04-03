@@ -32,7 +32,7 @@ void Runge_Kutta(const double& a, const double& b, const int& n, std::vector<dou
 }
 
 
-int main()
+int mainn()
 {
     setlocale(LC_ALL, "Russian");
     double a = 0.0;
