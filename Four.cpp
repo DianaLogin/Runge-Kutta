@@ -32,7 +32,7 @@ void Runge_Kutta(const double& a, const double& b, const int& n, std::vector<dou
 }
 
 
-int mainn()
+int mai()
 {
     setlocale(LC_ALL, "Russian");
     double a = 0.0;
@@ -61,8 +61,6 @@ int mainn()
         double max_err = (*std::max_element(err.begin(), err.end()));
         max_errors.push_back(max_err);
         h_squared.push_back(h * h * h * h);
-
-        // Вычисление err/h^4
         double h4 = pow(h, 4);
         double err_h4 = max_err / h4;
         err_over_h4.push_back(err_h4);
